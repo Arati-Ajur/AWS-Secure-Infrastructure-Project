@@ -11,49 +11,6 @@
 - IAM  
 - Linux Administration
 
-
-Architecture Flow
-                    User / Client
-                         │
-                         │ Secure VPN Connection
-                         ▼
-                   OpenVPN Client
-                         │
-                         ▼
-                ┌─────────────────┐
-                │ EC2 Ubuntu Server│
-                │ (OpenVPN Server) │
-                └─────────────────┘
-                         │
-                         │ Inside AWS Network
-                         ▼
-                ┌─────────────────┐
-                │      AWS VPC     │
-                │ Public + Private │
-                │     Subnets      │
-                └─────────────────┘
-                         │
-                         ▼
-                ┌─────────────────┐
-                │   Amazon S3      │
-                │ Static Website   │
-                └─────────────────┘
-                         │
-                         ▼
-                ┌─────────────────┐
-                │ Amazon CloudFront│
-                │ CDN Distribution │
-                └─────────────────┘
-                         │
-                         ▼
-                ┌─────────────────┐
-                │    AWS WAF       │
-                │ Security Rules   │
-                └─────────────────┘
-                         │
-                         ▼
-                  Protected Website
-
 ## Project Overview
 Built secure cloud infrastructure using AWS services with VPN access, static website hosting, CDN delivery, and web security.
 
