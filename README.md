@@ -1,5 +1,59 @@
 # AWS-Secure-Infrastructure-Project
 
+## Services Used
+
+- AWS VPC  
+- EC2  
+- OpenVPN  
+- S3  
+- CloudFront  
+- AWS WAF  
+- IAM  
+- Linux Administration
+
+
+Architecture Flow
+                    User / Client
+                         │
+                         │ Secure VPN Connection
+                         ▼
+                   OpenVPN Client
+                         │
+                         ▼
+                ┌─────────────────┐
+                │ EC2 Ubuntu Server│
+                │ (OpenVPN Server) │
+                └─────────────────┘
+                         │
+                         │ Inside AWS Network
+                         ▼
+                ┌─────────────────┐
+                │      AWS VPC     │
+                │ Public + Private │
+                │     Subnets      │
+                └─────────────────┘
+                         │
+                         ▼
+                ┌─────────────────┐
+                │   Amazon S3      │
+                │ Static Website   │
+                └─────────────────┘
+                         │
+                         ▼
+                ┌─────────────────┐
+                │ Amazon CloudFront│
+                │ CDN Distribution │
+                └─────────────────┘
+                         │
+                         ▼
+                ┌─────────────────┐
+                │    AWS WAF       │
+                │ Security Rules   │
+                └─────────────────┘
+                         │
+                         ▼
+                  Protected Website
+
 ## Project Overview
 Built secure cloud infrastructure using AWS services with VPN access, static website hosting, CDN delivery, and web security.
 
@@ -39,6 +93,9 @@ Configured CloudFront for faster global content delivery.
 
 Created WAF rules to protect web application traffic.
 <img width="1920" height="1080" alt="Screenshot (158)" src="https://github.com/user-attachments/assets/ac6b442a-e94d-4011-a04a-09f7c067fd95" />
+
+result
+<img width="1920" height="1080" alt="Screenshot (159) - Copy" src="https://github.com/user-attachments/assets/067fae37-c416-4041-8d6a-ea09aafc290c" />
 
 
 
