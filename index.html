@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CloudMart - AWS Secure Infrastructure Project</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#f4f6f9;
+color:#333;
+}
+
+header{
+background:#232f3e;
+color:white;
+padding:20px 50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+header h1{
+font-size:28px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+.hero{
+height:80vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1451187580459-43490279c0fa');
+background-size:cover;
+background-position:center;
+color:white;
+text-align:center;
+}
+
+.hero h2{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+width:70%;
+}
+
+.btn{
+margin-top:20px;
+display:inline-block;
+padding:12px 25px;
+background:#ff9900;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+section{
+padding:60px 50px;
+}
+
+.section-title{
+text-align:center;
+font-size:36px;
+margin-bottom:40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#ff9900;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.feature{
+background:white;
+padding:25px;
+border-left:5px solid #ff9900;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+footer{
+background:#232f3e;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>CloudMart</h1>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">Security</a>
+<a href="#">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+
+<h2>Secure AWS Cloud Infrastructure</h2>
+
+<p>
+Built using Amazon S3, CloudFront, AWS WAF,
+VPC, IAM, EC2 and OpenVPN.
+</p>
+
+<a href="#" class="btn">Explore Project</a>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Project Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Amazon S3</h3>
+<p>Static website hosting with scalable object storage.</p>
+</div>
+
+<div class="card">
+<h3>CloudFront CDN</h3>
+<p>Global content delivery and low latency access.</p>
+</div>
+
+<div class="card">
+<h3>AWS WAF</h3>
+<p>Protection against SQL Injection, XSS and bots.</p>
+</div>
+
+<div class="card">
+<h3>OpenVPN</h3>
+<p>Secure remote administration for internal resources.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Architecture Highlights</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>Public & Private Subnets</h3>
+<p>
+Segregated network architecture for enhanced security.
+</p>
+</div>
+
+<div class="feature">
+<h3>IAM Security</h3>
+<p>
+Role based access management following least privilege principle.
+</p>
+</div>
+
+<div class="feature">
+<h3>Cloud Security</h3>
+<p>
+WAF protection, VPN connectivity and Security Groups.
+</p>
+</div>
+
+<div class="feature">
+<h3>Global Availability</h3>
+<p>
+CloudFront CDN ensures worldwide content delivery.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Security Layers</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>WAF Protection</h3>
+<p>Blocks malicious traffic and web attacks.</p>
+</div>
+
+<div class="card">
+<h3>VPN Access</h3>
+<p>Only authenticated users can access private servers.</p>
+</div>
+
+<div class="card">
+<h3>IAM Roles</h3>
+<p>Granular permissions for users and services.</p>
+</div>
+
+<div class="card">
+<h3>Security Groups</h3>
+<p>Instance-level firewall controls.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>CloudMart AWS Infrastructure Project</h3>
+
+<p>
+Created for AWS Cloud Engineering Training
+</p>
+
+</footer>
+
+</body>
+</html>
